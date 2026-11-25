@@ -23680,7 +23680,7 @@ function XN({ answers: l, biometrics: i, onBack: r, onNext: c }) {
               }),
               e.jsx("span", {
                 className: "text-[10px] font-bold text-[color:var(--coral)]",
-                children: "+70% vs gym",
+                children: "+70% vs gimnasio",
               }),
             ],
           }),
@@ -25720,7 +25720,7 @@ function s3() {
                   }),
                   e.jsx("th", {
                     className: "pb-3 font-medium text-[color:var(--ink-muted)]",
-                    children: "Rutinas de Gym / YouTube",
+                    children: "Rutinas de gimnasio / YouTube",
                   }),
                 ],
               }),
@@ -25780,7 +25780,7 @@ function l3() {
       city: "Santiago, Chile",
       image: I0,
       quote:
-        "Había probado rutinas de YouTube durante meses y solo me dolían las rodillas. En 2 semanas con el Método Brasileño sentí por primera vez la activación real. Mis pantalones me quedan completamente distintos.",
+        "Había probado rutinas de YouTube durante meses y solo me dolían las rodillas. En 2 semanas con el Método Brasileño sentí por primera vez la activación real. Los pantalones me sientan completamente distintos.",
       stars: 5,
     },
     {
@@ -25797,7 +25797,7 @@ function l3() {
       city: "Ciudad de México",
       image: Y0,
       quote:
-        "A mis 42 creía que ya era imposible levantar los glúteos sin ir al gym con pesas gigantes. La explicación de la postura y los ángulos lo cambia todo. 100% recomendado.",
+        "A mis 42 creía que ya era imposible levantar los glúteos sin ir al gimnasio con pesas gigantes. La explicación de la postura y los ángulos lo cambia todo. 100% recomendado.",
       stars: 5,
     },
     {
@@ -25805,7 +25805,7 @@ function l3() {
       city: "Lima, Perú",
       image: X0,
       quote:
-        "Tenía mucho miedo de lastimarme la columna porque tengo antecedentes lumbares. Las rutinas son suaves pero queman de verdad en el músculo correcto. Me devolvió la seguridad en mí misma.",
+        "Tenía mucho miedo de hacerme daño en la columna porque tengo antecedentes lumbares. Las rutinas son suaves pero queman de verdad en el músculo correcto. Me devolvió la seguridad en mí misma.",
       stars: 5,
     },
   ];
@@ -25828,7 +25828,7 @@ function l3() {
             className:
               "mx-auto mt-2 max-w-xl text-sm text-[color:var(--ink-muted)]",
             children:
-              "Más de 2.800 alumnas en toda Latinoamérica ya han transformado su silueta desde su casa.",
+              "Más de 2.800 alumnas de habla hispana ya han transformado su silueta desde su casa.",
           }),
         ],
       }),
