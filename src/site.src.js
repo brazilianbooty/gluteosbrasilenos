@@ -19812,7 +19812,7 @@ function br(l, i = {}) {
       content_category: "Quiz Funnel 28 Dias",
       content_type: "quiz_step",
       value: 9.9,
-      currency: "USD",
+      currency: "EUR",
       ...i,
     });
 }
@@ -19837,7 +19837,7 @@ function Sy(l = {}) {
       content_name: "BrazilianBooty - Quiz Completado",
       content_category: "Quiz Lead",
       value: 9.9,
-      currency: "USD",
+      currency: "EUR",
       ...l,
     }));
 }
@@ -19848,7 +19848,7 @@ function _u(l = "final_cta", i = 9.9, r = "BUMBUM90", c = {}) {
     content_ids: ["BRAZILIANBOOTY28"],
     content_type: "product",
     value: i,
-    currency: "USD",
+    currency: "EUR",
     num_items: 1,
     coupon: r,
     click_location: l,
@@ -19890,7 +19890,7 @@ function Ay(l = "vid-6aa9ec0b2867174ee33fcba6") {
 function Fy() {
   Ea("trackCustom", "VslPitchReached", { timestamp: new Date().toISOString() });
 }
-function w0(l = "vsl_primary_cta", i = 9.9, r = "USD") {
+function w0(l = "vsl_primary_cta", i = 9.9, r = "EUR") {
   _u(l, i, "BUMBUM90", { currency: r });
 }
 function zy() {
@@ -19898,7 +19898,7 @@ function zy() {
     br("Special Offer BrazilianBooty", {
       page_type: "special_offer",
       value: 9.9,
-      currency: "USD",
+      currency: "EUR",
     }),
     Ea("trackCustom", "SpecialOfferView", {
       timestamp: new Date().toISOString(),
@@ -19921,7 +19921,7 @@ function B0() {
       content_ids: ["BRAZILIANBOOTY28"],
       content_type: "product",
       value: 9.9,
-      currency: "USD",
+      currency: "EUR",
       num_items: 1,
     }));
 }
@@ -19930,7 +19930,7 @@ function E0(l = {}) {
     br("Quiz Plan Offer Screen", {
       page_type: "full_offer_plan",
       price: 9.9,
-      currency: "USD",
+      currency: "EUR",
       ...l,
     }));
 }
@@ -24683,7 +24683,7 @@ function ZN({ answers: l, biometrics: i, onBack: r, onProceedToOffer: c }) {
                   " en",
                   " ",
                   e.jsxs("strong", { children: [x, " al día"] }),
-                  " con 90% de descuento aplicado ($9.90 USD).",
+                  " con 90% de descuento aplicado (9,90 €).",
                 ],
               }),
               e.jsxs("button", {
@@ -24742,7 +24742,7 @@ function $N({ answers: l, biometrics: i }) {
       user_age: p,
       user_time: v,
       price: 9.9,
-      currency: "USD",
+      currency: "EUR",
     });
     const y = () => {
       if (m.current) {
@@ -24785,7 +24785,7 @@ function $N({ answers: l, biometrics: i }) {
                   "flex items-center gap-1 rounded-full bg-[color:var(--lime)] px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-[color:var(--wine)] shadow-sm",
                 children: [
                   e.jsx(yr, { size: 13, strokeWidth: 3 }),
-                  " 90% APLICADO ($9.90 USD)",
+                  " 90% APLICADO (9,90 €)",
                 ],
               }),
             ],
@@ -24894,7 +24894,7 @@ function $N({ answers: l, biometrics: i }) {
                   "Accede de por vida al Desafío Glúteos Brasileños + 4 bonos de regalo por un único pago de solo ",
                   e.jsx("strong", {
                     className: "text-[color:var(--coral)]",
-                    children: "$9.90 USD",
+                    children: "9,90 €",
                   }),
                   ".",
                 ],
@@ -24913,7 +24913,7 @@ function $N({ answers: l, biometrics: i }) {
                     e.jsxs("span", {
                       className: "flex items-center justify-center gap-2",
                       children: [
-                        "¡QUIERO MI PLAN COMPLETO POR $9.90!",
+                        "¡QUIERO MI PLAN COMPLETO POR 9,90 €!",
                         e.jsx(De, { size: 20 }),
                       ],
                     }),
@@ -24976,7 +24976,7 @@ function $N({ answers: l, biometrics: i }) {
                       " ",
                       e.jsx("span", {
                         className: "text-[color:var(--shock-yellow)]",
-                        children: "$9.90 USD",
+                        children: "9,90 €",
                       }),
                     ],
                   }),
@@ -24994,7 +24994,7 @@ function $N({ answers: l, biometrics: i }) {
                   e.jsxs("span", {
                     className: "flex items-center justify-center gap-1.5",
                     children: [
-                      "¡ACCEDER POR SOLO $9.90!",
+                      "¡ACCEDER POR SOLO 9,90 €!",
                       e.jsx(De, { size: 16 }),
                     ],
                   }),
@@ -25236,7 +25236,7 @@ function WN({ onCtaClick: l }) {
                       e.jsx("span", {
                         className:
                           "text-sm font-bold text-[color:var(--ink-muted)] line-through",
-                        children: "Precio Regular: $97 USD",
+                        children: "Precio Regular: 97 €",
                       }),
                       e.jsx("span", {
                         className:
@@ -25257,11 +25257,11 @@ function WN({ onCtaClick: l }) {
                       e.jsx("span", {
                         className:
                           "font-display text-4xl sm:text-5xl font-black text-[color:var(--coral)]",
-                        children: "$9.90",
+                        children: "9,90",
                       }),
                       e.jsx("span", {
                         className: "text-sm font-bold text-[color:var(--wine)]",
-                        children: "USD",
+                        children: "€",
                       }),
                     ],
                   }),
@@ -25285,7 +25285,7 @@ function WN({ onCtaClick: l }) {
                   e.jsxs("span", {
                     className: "flex items-center justify-center gap-2",
                     children: [
-                      "¡QUIERO ACCESO POR SOLO $9.90 USD!",
+                      "¡QUIERO ACCESO POR SOLO 9,90 €!",
                       e.jsx(De, { size: 22 }),
                     ],
                   }),
@@ -25332,38 +25332,38 @@ function e3() {
   const l = [
     {
       name: "Programa Completo Desafío Glúteos Brasileños 28 Días",
-      value: "$97.00 USD",
+      value: "97,00 €",
     },
     {
       name: "Módulo 1: Despertar Neuromuscular y Activación Inicial",
-      value: "$27.00 USD",
+      value: "27,00 €",
     },
     {
       name: "Módulo 2: Sobrecarga Progresiva y Volumen Lateral",
-      value: "$37.00 USD",
+      value: "37,00 €",
     },
     {
       name: "Módulo 3: Escultura, Elevación y Firmeza Máxima",
-      value: "$37.00 USD",
+      value: "37,00 €",
     },
     {
       name: "Bono #1: Guía Nutricional Anti-Flacidez y Menú Glúteos Firmes",
-      value: "$37.00 USD",
+      value: "37,00 €",
       free: !0,
     },
     {
       name: "Bono #2: Protocolo Express Anti-Celulitis y Drenaje",
-      value: "$29.00 USD",
+      value: "29,00 €",
       free: !0,
     },
     {
       name: "Bono #3: Planificador Imprimible de Hábitos y Tracker Diario",
-      value: "$19.00 USD",
+      value: "19,00 €",
       free: !0,
     },
     {
       name: "Bono #4: Acceso VIP a la Comunidad y Soporte De Por Vida",
-      value: "$47.00 USD",
+      value: "47,00 €",
       free: !0,
     },
     {
@@ -25431,7 +25431,7 @@ function e3() {
               }),
               e.jsx("span", {
                 className: "text-sm font-bold line-through text-white/60",
-                children: "$229.00 USD",
+                children: "229,00 €",
               }),
             ],
           }),
@@ -25445,7 +25445,7 @@ function e3() {
               e.jsx("span", {
                 className:
                   "font-display text-3xl font-black text-[color:var(--shock-yellow)]",
-                children: "$9.90 USD",
+                children: "9,90 €",
               }),
             ],
           }),
@@ -25566,25 +25566,25 @@ function a3() {
     {
       badge: "BONO #1",
       title: "Guía Nutricional Anti-Flacidez",
-      value: "$37 USD",
+      value: "37 €",
       desc: "Menús simples y qué comer antes y después de entrenar para estimular la síntesis de colágeno y firmeza.",
     },
     {
       badge: "BONO #2",
       title: "Protocolo Anti-Celulitis Express",
-      value: "$29 USD",
+      value: "29 €",
       desc: "Secuencias de drenaje y activación circulatoria en casa para alisar la textura de la piel en glúteos y piernas.",
     },
     {
       badge: "BONO #3",
       title: "Tracker Imprimible de 28 Días",
-      value: "$19 USD",
+      value: "19 €",
       desc: "Plantilla visual para registrar tus medidas, tus fotos de progreso y mantener la motivación al 100%.",
     },
     {
       badge: "BONO #4",
       title: "Comunidad VIP de Alumnas & Soporte",
-      value: "$47 USD",
+      value: "47 €",
       desc: "Espacio privado exclusivo para resolver preguntas, compartir recetas y motivarte con compañeras.",
     },
   ];
@@ -25604,7 +25604,7 @@ function a3() {
             className:
               "font-display mt-2 text-xl font-black text-[color:var(--wine)] md:text-2xl",
             children:
-              "Llévate Estos 4 Bonos de Regalo (Valorados en $132 USD) por $0",
+              "Llévate Estos 4 Bonos de Regalo (Valorados en 132 €) por 0 €",
           }),
         ],
       }),
@@ -25991,7 +25991,7 @@ function n3() {
                 className: "flex items-start gap-2",
                 children: [
                   e.jsx("span", { children: "✗" }),
-                  " Prefieres gastar miles de dólares en cirugías invasivas.",
+                  " Prefieres gastar miles de euros en cirugías invasivas.",
                 ],
               }),
               e.jsxs("li", {
@@ -26177,7 +26177,7 @@ function i3({ onCtaClick: l }) {
         className:
           "mx-auto mt-2 max-w-xl text-xs sm:text-sm text-emerald-900 leading-relaxed",
         children:
-          "Prueba el Desafío Glúteos Brasileños durante 7 días completos. Si por cualquier motivo no sientes la activación y los cambios en tu cuerpo, simplemente solicita tu reembolso con un clic y te devolvemos el 100% de tu dinero de inmediato ($9.90 USD). Sin preguntas ni trámites.",
+          "Prueba el Desafío Glúteos Brasileños durante 7 días completos. Si por cualquier motivo no sientes la activación y los cambios en tu cuerpo, simplemente solicita tu reembolso con un clic y te devolvemos el 100% de tu dinero de inmediato (9,90 €). Sin preguntas ni trámites.",
       }),
       e.jsx("div", {
         className: "mt-5",
@@ -26191,7 +26191,7 @@ function i3({ onCtaClick: l }) {
           children: [
             e.jsx("span", { className: "button-sheen" }),
             e.jsx("span", {
-              children: "PROBAR EL MÉTODO SIN RIESGO POR $9.90",
+              children: "PROBAR EL MÉTODO SIN RIESGO POR 9,90 €",
             }),
           ],
         }),
@@ -26203,7 +26203,7 @@ function o3({ openFaq: l, setOpenFaq: i }) {
   const r = [
     {
       q: "¿Cómo y cuándo recibo mi acceso al programa?",
-      a: "El acceso es 100% inmediato. Tras confirmar tu pago seguro de $9.90 USD, recibirás un correo electrónico con tus credenciales de acceso para entrar a la plataforma y comenzar hoy mismo.",
+      a: "El acceso es 100% inmediato. Tras confirmar tu pago seguro de 9,90 €, recibirás un correo electrónico con tus credenciales de acceso para entrar a la plataforma y comenzar hoy mismo.",
     },
     {
       q: "¿Necesito equipo o pesas para hacer las rutinas?",
@@ -26219,7 +26219,7 @@ function o3({ openFaq: l, setOpenFaq: i }) {
     },
     {
       q: "¿Es un pago único o me cobrarán cada mes?",
-      a: "Es un pago ÚNICO de solo $9.90 USD. No hay mensualidades, cargos sorpresa ni suscripciones ocultas. Tu acceso es de por vida con todas las actualizaciones futuras incluidas.",
+      a: "Es un pago ÚNICO de solo 9,90 €. No hay mensualidades, cargos sorpresa ni suscripciones ocultas. Tu acceso es de por vida con todas las actualizaciones futuras incluidas.",
     },
     {
       q: "¿Qué métodos de pago aceptan?",
@@ -26343,7 +26343,7 @@ function c3() {
           e.jsx("span", {
             className:
               "block text-[10px] font-extrabold uppercase tracking-wide text-[color:var(--coral-dark)]",
-            children: "El cupón de $9.90 expira en:",
+            children: "El cupón de 9,90 € expira en:",
           }),
           e.jsxs("span", {
             className: "font-mono text-sm font-black text-[color:var(--wine)]",
