@@ -25777,7 +25777,6 @@ function l3() {
   const l = [
     {
       name: "Mariana Silva, 34 años",
-      city: "Santiago, Chile",
       image: I0,
       quote:
         "Había probado rutinas de YouTube durante meses y solo me dolían las rodillas. En 2 semanas con el Método Brasileño sentí por primera vez la activación real. Los pantalones me sientan completamente distintos.",
@@ -25785,7 +25784,6 @@ function l3() {
     },
     {
       name: "Camila Rodríguez, 29 años",
-      city: "Bogotá, Colombia",
       image: Q0,
       quote:
         "Tengo un trabajo de oficina y paso 8 horas sentada. Este programa de 15 minutos fue lo único que pude mantener con constancia. La firmeza que logré en 28 días es impresionante.",
@@ -25794,7 +25792,6 @@ function l3() {
     },
     {
       name: "Valeria Morales, 42 años",
-      city: "Ciudad de México",
       image: Y0,
       quote:
         "A mis 42 creía que ya era imposible levantar los glúteos sin ir al gimnasio con pesas gigantes. La explicación de la postura y los ángulos lo cambia todo. 100% recomendado.",
@@ -25802,7 +25799,6 @@ function l3() {
     },
     {
       name: "Lucía Gómez, 51 años",
-      city: "Lima, Perú",
       image: X0,
       quote:
         "Tenía mucho miedo de hacerme daño en la columna porque tengo antecedentes lumbares. Las rutinas son suaves pero queman de verdad en el músculo correcto. Me devolvió la seguridad en mí misma.",
@@ -25892,11 +25888,6 @@ function l3() {
                           className:
                             "block text-xs font-black text-[color:var(--wine)]",
                           children: i.name,
-                        }),
-                        e.jsx("span", {
-                          className:
-                            "text-[11px] text-[color:var(--ink-muted)]",
-                          children: i.city,
                         }),
                       ],
                     }),
