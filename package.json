@@ -1,0 +1,13 @@
+{
+  "name": "gluteosbrasilenos-funil",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write src/site.src.js",
+    "build": "esbuild src/site.src.js --minify --format=esm --target=es2020 --outfile=site.js",
+    "serve": "python -m http.server 8000"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "prettier": "^3.3.0"
+  }
+}
