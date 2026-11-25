@@ -21926,6 +21926,16 @@ const Dh = "mb28_quiz_answers",
   Oh = "mb28_quiz_screen",
   Ph = "mb28_quiz_biometrics";
 // Fluxo curto do quiz (perguntas usadas e ordem)
+// Um evento com nome próprio por etapa (a configuração básica do pixel remove parâmetros e URL)
+const Qe = {
+  "pergunta-1": "Quiz1Gluteos",
+  "pergunta-6": "Quiz2Tiempo",
+  "pergunta-9": "Quiz3Edad",
+  medidas: "Quiz4Medidas",
+  "pergunta-11": "Quiz5Objetivo",
+  "pergunta-12": "Quiz6Obstaculo",
+};
+const Qs = new Set(); // cada etapa conta uma vez por visita
 const Qq = [1, 6, 9, 11, 12],
   Qt = 6;
 function Qf(l) {
@@ -22118,12 +22128,9 @@ function K0() {
         if (
           (window.scrollTo({ top: 0, behavior: "smooth" }),
           N0() ||
-            Ea("trackCustom", "EtapaQuiz", {
-              step: Ii(r),
-              step_number: Qf(r),
-              total_steps: Qt,
-              content_category: "Quiz Funnel 28 Dias",
-            }),
+            !Qe[Ii(r)] ||
+            Qs.has(Ii(r)) ||
+            (Qs.add(Ii(r)), Ea("trackCustom", Qe[Ii(r)])),
           r.kind === "question")
         )
           (r.n, r.title);

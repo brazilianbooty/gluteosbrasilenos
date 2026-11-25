@@ -11,7 +11,7 @@ inicio → pergunta-1 → pergunta-6 → pergunta-9 → medidas → pergunta-11 
 A ordem fica na constante `Qq` (perguntas usadas) em `src/site.src.js`.
 
 ## Eventos do pixel
-- `EtapaQuiz` (custom) em cada tela, com `step` e `step_number`
+- Um evento custom por etapa: Quiz1Gluteos, Quiz2Tiempo, Quiz3Edad, Quiz4Medidas, Quiz5Objetivo, Quiz6Obstaculo
 - `QuizComplete` (custom) + `Lead` ao terminar o quiz (tela diagnóstico)
 - `AddToCart` ao abrir a VSL; `VslPlay` / `VslPitchReached` no vídeo
 - `ViewContent` ao abrir a oferta; `InitiateCheckout` no clique em comprar
