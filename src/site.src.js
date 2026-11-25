@@ -19793,7 +19793,7 @@ function Ea(...l) {
     x =
       i === "ViewContent"
         ? i + ":" + r.content_name
-        : i === "QuizStep"
+        : i === "EtapaQuiz"
           ? i + ":" + r.step
           : i;
   if (u[x] && c - u[x] < 1000) return;
@@ -22118,7 +22118,7 @@ function K0() {
         if (
           (window.scrollTo({ top: 0, behavior: "smooth" }),
           N0() ||
-            Ea("trackCustom", "QuizStep", {
+            Ea("trackCustom", "EtapaQuiz", {
               step: Ii(r),
               step_number: Qf(r),
               total_steps: Qt,
