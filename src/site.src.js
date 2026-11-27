@@ -25280,6 +25280,12 @@ function WN({ onCtaClick: l }) {
                   }),
                 ],
               }),
+              e.jsx("p", {
+                className:
+                  "text-center text-[12px] md:text-[13px] font-bold text-emerald-700",
+                children:
+                  "🔒 Pago 100% seguro · Garantía de 7 días · Acceso inmediato por email",
+              }),
               e.jsxs("a", {
                 href: Mt(Ka),
                 onClick: (i) => {
