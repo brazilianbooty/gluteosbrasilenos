@@ -19760,6 +19760,59 @@ var wy = class extends mo {
 const Ka = "https://pay.kiwify.com/Ql7HrES",
   er = Ka,
   tr = Ka;
+const DS_CHECKOUT = "https://www.checkout-ds24.com/product/775408/";
+// Versão Digistore24: ativada ao abrir /ds/ (ou ?ck=ds) e mantida durante a visita
+function isDS() {
+  try {
+    if (typeof window > "u") return !1;
+    const p = window.location.pathname.toLowerCase();
+    if (p === "/ds" || p.startsWith("/ds/") || new URLSearchParams(window.location.search).get("ck") === "ds")
+      window.sessionStorage.setItem("ckds", "1");
+    return window.sessionStorage.getItem("ckds") === "1";
+  } catch {
+    return !1;
+  }
+}
+// No modo Digistore: garantia de 60 dias (exigência da Digistore24) + rodapé legal
+(function dsMode() {
+  if (typeof window > "u" || !isDS()) return;
+  const RX = /(garant|reembols|devoluc)/i;
+  const fix = (n) => {
+    if (n.nodeType === 3) {
+      if (RX.test(n.nodeValue) && /\b7 (d[ií]as)/i.test(n.nodeValue))
+        n.nodeValue = n.nodeValue.replace(/\b7 (d[ií]as)/gi, "60 $1");
+      return;
+    }
+    if (n.nodeType === 1 && n.id !== "ds-footer") {
+      const t = (n.innerText || n.textContent || "");
+      if (/\b7 (D[ií]as)/.test(t) && RX.test(t))
+        n.querySelectorAll("*").forEach((c) => c.childNodes.forEach((x) => {
+          if (x.nodeType === 3 && /^\s*7 D[ií]as/.test(x.nodeValue)) x.nodeValue = x.nodeValue.replace(/7 (D[ií]as)/, "60 $1");
+        }));
+      n.childNodes.forEach(fix);
+    }
+  };
+  const footer = () => {
+    if (document.getElementById("ds-footer")) return;
+    const f = document.createElement("footer");
+    f.id = "ds-footer";
+    f.style.cssText = "background:#2a1020;color:#f3dbe8;font:13px/1.55 'DM Sans',system-ui,sans-serif;padding:26px 18px 34px;text-align:center";
+    f.innerHTML =
+      '<div style="max-width:720px;margin:0 auto">' +
+      '<div id="ds-badge" style="margin-bottom:14px"></div>' +
+      '<p style="margin:0 0 8px"><b>Garantía de devolución de 60 días.</b> Si no estás satisfecha, solicita el reembolso del 100% dentro de los 60 días siguientes a la compra.</p>' +
+      '<p style="margin:0 0 8px">El cobro será procesado por Digistore24.com. Digistore24 Inc., 360 Central Avenue, Suite 800, St. Petersburg, FL 33701, EE. UU., es el distribuidor de este producto.</p>' +
+      '<p style="margin:0;opacity:.8">Los resultados pueden variar de una persona a otra. Este programa no sustituye el consejo médico.</p>' +
+      "</div>";
+    document.body.appendChild(f);
+  };
+  const run = () => { fix(document.body); footer(); };
+  const start = () => {
+    run();
+    new MutationObserver((ms) => ms.forEach((m) => m.addedNodes.forEach(fix))).observe(document.body, { childList: !0, subtree: !0, characterData: !0 });
+  };
+  document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", start) : start();
+})();
 function N0() {
   if (typeof window > "u") return !1;
   const l = window.location.pathname.toLowerCase();
@@ -19856,6 +19909,7 @@ function _u(l = "final_cta", i = 9.9, r = "BUMBUM90", c = {}) {
   });
 }
 function Mt(l = Ka) {
+  if (isDS() && (l === Ka || /pay\.kiwify\.com\/Ql7HrES/.test(l || ""))) l = DS_CHECKOUT;
   if (!l || l === "#" || l.trim() === "") return "#";
   if (typeof window > "u") return l;
   try {
