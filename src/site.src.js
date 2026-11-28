@@ -19806,7 +19806,14 @@ function isDS() {
       "</div>";
     document.body.appendChild(f);
   };
-  const run = () => { fix(document.body); footer(); };
+  const badge = () => {
+    if (document.getElementById("ds-badge-js")) return;
+    const b = document.createElement("script");
+    b.id = "ds-badge-js";
+    b.src = "https://www.digistore24.com/trusted-badge/49842/07fXD7x8eRcrvLm/salespage";
+    document.body.appendChild(b);
+  };
+  const run = () => { fix(document.body); footer(); badge(); };
   const start = () => {
     run();
     new MutationObserver((ms) => ms.forEach((m) => m.addedNodes.forEach(fix))).observe(document.body, { childList: !0, subtree: !0, characterData: !0 });
